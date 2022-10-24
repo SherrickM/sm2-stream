@@ -1,0 +1,9 @@
+
+const resolvers = {
+// Queries
+
+// Mutations
+
+// 
+
+};
