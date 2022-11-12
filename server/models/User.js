@@ -20,7 +20,13 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
-    
+    list:[
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'List'
+      }
+    ]
+       
   },
   // set this to use virtual below
   {

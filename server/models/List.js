@@ -5,18 +5,12 @@ const { Schema, model } = require('mongoose');
 
 const listSchema = new Schema(
   {
-    title: {
-      type: String,
-      required: true,
-    },
-    genre: {
-      type: String,
-      required: true,
-    },
-    moreInfo: {
-      type: String,
-      required: true,
-    },
+    movies:[{
+      type: Schema.Types.ObjectId,
+      ref: 'Movie',
+      required: true
+    }]
+    
 
   },
   
